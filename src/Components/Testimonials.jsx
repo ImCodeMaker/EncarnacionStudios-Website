@@ -3,14 +3,38 @@ import TestimonialsCards from './TestimonialsCards';
 
 function Testimonials() {
   return (
-    <div className='bg-slate-300 h-[400px] flex flex-col items-center overflow-hidden'>
-      <div className='w-full'>
-        <h2 className='text-2xl font-semibold font-poppins ml-36 mt-[50px]'>Testimonials</h2>
-      </div>
-      <div className='flex justify-center space-x-12 max-w-6xl mx-auto mt-20 overflow-hidden'>
-        <TestimonialsCards title={'Test'} text={'I dont even know what to put in here but i know that i have to put something but yeah, its okay i guess.'} name={'John Doe'} reviewDate={'12/01/2006'}/>
-        <TestimonialsCards title={'Test'} text={'I dont even know what to put in here but i know that i have to put something but yeah, its okay i guess.'} name={'John Doe'} reviewDate={'12/01/2006'}/>
-        <TestimonialsCards title={'Test'} text={'I dont even know what to put in here but i know that i have to put something but yeah, its okay i guess.'} name={'John Doe'} reviewDate={'12/01/2006'}/>
+    <div className='bg-slate-300 py-10 px-4 flex flex-col items-center h-[510px]'>
+      <h2 className='text-3xl md:text-4xl font-semibold font-poppins mb-6 text-center'>Testimonials</h2>
+      <p className='font-light font-poppins text-[#757575] mb-8 text-center max-w-2xl'>
+        Here are some of the most common questions our customers ask. If you need more information, feel free to reach out to our support team.
+      </p>
+      <div className='flex flex-col items-center w-full max-w-4xl'>
+        <div className='flex flex-col md:flex-row md:space-x-8 space-y-8 md:space-y-0 w-full'>
+          <div className='flex-1 min-w-[300px]'>
+            <TestimonialsCards 
+              title={'Test'} 
+              text={'I don’t even know what to put in here but I know that I have to put something but yeah, it’s okay I guess.'} 
+              name={'John Doe'} 
+              reviewDate={'12/01/2006'}
+            />
+          </div>
+          <div className='flex-1 min-w-[300px]'>
+            <TestimonialsCards 
+              title={'Test'} 
+              text={'I don’t even know what to put in here but I know that I have to put something but yeah, it’s okay I guess.'} 
+              name={'John Doe'} 
+              reviewDate={'12/01/2006'}
+            />
+          </div>
+          <div className='flex-1 min-w-[300px]'>
+            <TestimonialsCards 
+              title={'Test'} 
+              text={'I don’t even know what to put in here but I know that I have to put something but yeah, it’s okay I guess.'} 
+              name={'John Doe'} 
+              reviewDate={'12/01/2006'}
+            />
+          </div>
+        </div>
       </div>
     </div>
   );

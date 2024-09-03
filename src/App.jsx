@@ -1,7 +1,9 @@
+import FAQ from './Components/FAQ';
 import MainSection from './Components/MainSection';
 import Navbar from './Components/Navbar';
 import ServicesSection from './Components/ServicesSection';
 import Testimonials from './Components/Testimonials';
+import Footer from './Components/Footer';
 
 function App() {
   return (
@@ -10,6 +12,8 @@ function App() {
       <MainSection/>
       <ServicesSection/>
       <Testimonials/>
+      <FAQ/>
+      <Footer/>
     </div>
   );
 }
