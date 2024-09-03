@@ -7,7 +7,7 @@ function MainSection() {
   };
 
   return (
-    <div id='home' className='bg-slate-300 h-[700px] flex flex-col justify-center items-center px-4 md:px-8'>
+    <div id='home' className='bg-slate-300 min-h-screen flex flex-col justify-center items-center px-4 md:px-8'>
       <h1 className='text-4xl md:text-6xl lg:text-7xl font-bold font-inter text-center'>
         Encarnacion Studios.
       </h1>
@@ -15,7 +15,7 @@ function MainSection() {
         <Button 
           className='px-6 py-3 md:px-8 md:py-4 bg-custom-dark text-custom-light rounded-lg hover:bg-gray-700'
           text="Check it out" 
-          onClick={scrollToServices} // Add this line
+          onClick={scrollToServices} 
         />
       </div>
     </div>
