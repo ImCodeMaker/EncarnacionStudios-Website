@@ -15,7 +15,7 @@ function Navbar() {
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
   return (
-    <div className='w-full px-6 py-4 bg-white shadow-md flex justify-between items-center'>
+    <div className='w-full px-6 py-4 bg-white shadow-md flex justify-between items-center relative'>
       <div className='text-2xl font-bold'>
         <a href='#home'>
           <img src={Logo} alt="Logo" className="h-[65px] transform scale-110" />
@@ -29,7 +29,7 @@ function Navbar() {
       </div>
 
       <button
-        className='md:hidden flex items-center'
+        className='md:hidden flex items-center text-gray-700'
         onClick={toggleMenu}
       >
         <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -39,9 +39,11 @@ function Navbar() {
 
       {isMenuOpen && (
         <div className='md:hidden absolute top-16 right-6 bg-white shadow-md rounded-md w-48'>
-          {menuOptions.map((item) => (
-            <NavbarItems key={item.id} name={item.name} />
-          ))}
+          <div className='flex flex-col items-center py-2'>
+            {menuOptions.map((item) => (
+              <NavbarItems key={item.id} name={item.name} />
+            ))}
+          </div>
         </div>
       )}
     </div>
