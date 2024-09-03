@@ -1,9 +1,11 @@
-import FAQ from './Components/FAQ';
-import MainSection from './Components/MainSection';
-import Navbar from './Components/Navbar';
-import ServicesSection from './Components/ServicesSection';
-import Testimonials from './Components/Testimonials';
-import Footer from './Components/Footer';
+import FAQ from './PagesLayout/FAQ';
+import MainSection from './PagesLayout/MainSection';
+import Navbar from './PagesLayout/Navbar';
+import ServicesSection from './PagesLayout/ServicesSection';
+import Testimonials from './PagesLayout/Testimonials';
+import Footer from './PagesLayout/Footer';
+
+
 
 function App() {
   return (

@@ -1,9 +1,9 @@
 import React from 'react';
-import Cards from './ServicesCard';
+import Cards from '../Components/ServicesCard';
 
 function ServicesSection() {
   return (
-    <div className='bg-custom-light py-12 px-4 md:px-8'>
+    <div id='services' className='bg-custom-light py-12 px-4 md:px-8 min-h-[700px] flex flex-col justify-center'>
       <h2 className='text-3xl md:text-4xl font-semibold font-inter text-center mb-12'>
         Our Services
       </h2>

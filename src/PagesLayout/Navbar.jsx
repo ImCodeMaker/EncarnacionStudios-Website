@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import NavbarItems from './NavbarItems';
+import NavbarItems from '../Components/NavbarItems'; // Assuming this is your component for individual navbar items
 import Logo from './../Assets/Images/logo.svg';
 
 const menuOptions = [
@@ -15,7 +15,7 @@ function Navbar() {
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
   return (
-    <div className='w-full px-6 py-4 bg-white shadow-md flex justify-between items-center relative'>
+    <div className='w-full px-6 py-4 bg-white shadow-md flex justify-between items-center fixed top-0 left-0 z-50'>
       <div className='text-2xl font-bold'>
         <a href='#home'>
           <img src={Logo} alt="Logo" className="h-[65px] transform scale-110" />
@@ -38,7 +38,7 @@ function Navbar() {
       </button>
 
       {isMenuOpen && (
-        <div className='md:hidden absolute top-16 right-6 bg-white shadow-md rounded-md w-48'>
+        <div className='md:hidden absolute top-16 right-6 bg-white shadow-md rounded-md w-48 z-50'>
           <div className='flex flex-col items-center py-2'>
             {menuOptions.map((item) => (
               <NavbarItems key={item.id} name={item.name} />

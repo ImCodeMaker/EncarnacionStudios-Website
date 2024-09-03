@@ -1,8 +1,9 @@
+// Button.jsx
 import React from 'react';
 
-function Button({ text, className }) {
+function Button({ className, text, onClick }) {
   return (
-    <button className={className}>
+    <button className={className} onClick={onClick}>
       {text}
     </button>
   );

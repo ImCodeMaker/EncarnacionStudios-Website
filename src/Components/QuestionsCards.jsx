@@ -11,6 +11,7 @@ function RenderCard() {
     return (
         <div
             className={`transition-all duration-300 ease-in-out mb-4 text-left rounded-md border-2 w-full max-w-lg p-4 bg-custom-light shadow-lg flex flex-col hover:shadow-xl transform hover:-translate-y-1 mx-auto ${isOpen ? 'h-auto' : 'h-14'}`}
+            style={{ maxWidth: '32rem' }} // Explicitly setting max width in case Tailwind's max-w-lg isn't sufficient
         >
             <div className='flex items-center justify-between cursor-pointer' onClick={handleClick}>
                 <h2 className='text-lg md:text-xl font-semibold font-inter mb-0 flex-1'>Title</h2>
