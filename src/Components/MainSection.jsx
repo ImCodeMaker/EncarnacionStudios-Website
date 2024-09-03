@@ -6,7 +6,7 @@ function MainSection() {
     <div className='bg-slate-300 h-[500px] flex flex-col justify-center items-center px-4 md:px-8'>
       <div className='text-center'>
         <h1 className='text-4xl md:text-6xl lg:text-7xl font-bold font-inter'>
-          Encarnacion Studios.
+          Encarnacion Studios
         </h1>
         <div className='mt-4 text-lg'>
           <Button 
