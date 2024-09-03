@@ -8,9 +8,9 @@ function Testimonials() {
       <p className='font-light font-inter text-[#757575] mb-8 text-center max-w-2xl'>
         Here are some of the most common questions our customers ask. If you need more information, feel free to reach out to our support team.
       </p>
-      <div className='flex flex-col items-center w-full max-w-6xl'>
+      <div className='flex flex-col md:flex-row justify-center items-center w-full max-w-6xl'>
         <div className='flex flex-col md:flex-row md:space-x-8 space-y-8 md:space-y-0 w-full'>
-          <div className='flex-1 min-w-[300px]'>
+          <div className='flex-1 max-w-sm'>
             <TestimonialsCards 
               title={'Test'} 
               text={'I don’t even know what to put in here but I know that I have to put something but yeah, it’s okay I guess.'} 
@@ -18,7 +18,7 @@ function Testimonials() {
               reviewDate={'12/01/2006'}
             />
           </div>
-          <div className='flex-1 min-w-[300px]'>
+          <div className='flex-1 max-w-sm'>
             <TestimonialsCards 
               title={'Test'} 
               text={'I don’t even know what to put in here but I know that I have to put something but yeah, it’s okay I guess.'} 
@@ -26,7 +26,7 @@ function Testimonials() {
               reviewDate={'12/01/2006'}
             />
           </div>
-          <div className='flex-1 min-w-[300px]'>
+          <div className='flex-1 max-w-sm'>
             <TestimonialsCards 
               title={'Test'} 
               text={'I don’t even know what to put in here but I know that I have to put something but yeah, it’s okay I guess.'} 
