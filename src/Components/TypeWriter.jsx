@@ -4,7 +4,7 @@ import React, { useState, useEffect } from 'react';
 const Typewriter = ({ text, speed, className }) => {
   const displayText = useTypewriter(text, speed);
 
-  return <p className={className}>{displayText}</p>;
+  return <h1 className={className}>{displayText}</h1>;
 };
 
 const useTypewriter = (text, speed = 50) => {
