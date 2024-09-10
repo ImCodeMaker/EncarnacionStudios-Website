@@ -3,10 +3,10 @@ import NavbarItems from '../Components/NavbarItems'; // Assuming this is your co
 import Logo from './../Assets/Images/logo.svg';
 
 const menuOptions = [
-  { name: 'Home', id: 1 },
-  { name: 'Services', id: 2 },
-  { name: 'Testimonials', id: 3 },
-  { name: 'FAQ', id: 4 },
+  { name: 'Home', id: 'main-section' },
+  { name: 'Services', id: 'services-section' },
+  { name: 'Testimonials', id: 'testimonials-section' },
+  { name: 'FAQ', id: 'faq-section' },
 ];
 
 function Navbar() {
@@ -14,17 +14,28 @@ function Navbar() {
 
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
+  const handleScroll = (sectionId) => {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <div className='w-full px-6 py-4 bg-white shadow-md flex justify-between items-center fixed top-0 left-0 z-50'>
       <div className='text-2xl font-bold'>
-        <a href='#home'>
-          <img src={Logo} alt="Logo" className="h-[65px] transform scale-110" />
-        </a>
+        <button onClick={() => handleScroll('main-section')}>
+          <img src={Logo} alt="Logo" className="h-[65px] transform scale-110 cursor-pointer" />
+        </button>
       </div>
 
       <div className='hidden md:flex md:items-center md:space-x-8'>
         {menuOptions.map((item) => (
-          <NavbarItems key={item.id} name={item.name} />
+          <NavbarItems 
+            key={item.id} 
+            name={item.name} 
+            onClick={handleScroll} 
+          />
         ))}
       </div>
 
@@ -41,7 +52,11 @@ function Navbar() {
         <div className='md:hidden absolute top-16 right-6 bg-white shadow-md rounded-md w-48 z-50'>
           <div className='flex flex-col items-center py-2'>
             {menuOptions.map((item) => (
-              <NavbarItems key={item.id} name={item.name} />
+              <NavbarItems 
+                key={item.id} 
+                name={item.name} 
+                onClick={handleScroll} 
+              />
             ))}
           </div>
         </div>
