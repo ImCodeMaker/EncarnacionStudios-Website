@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import NavbarItems from '../Components/NavbarItems'; // Assuming this is your component for individual navbar items
 import Logo from './../Assets/Images/logo.svg';
 
@@ -11,6 +11,7 @@ const menuOptions = [
 
 function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const menuRef = useRef(null);
 
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
@@ -20,6 +21,22 @@ function Navbar() {
       section.scrollIntoView({ behavior: 'smooth' });
     }
   };
+
+  const handleClickOutside = (event) => {
+    if (menuRef.current && !menuRef.current.contains(event.target)) {
+      setIsMenuOpen(false);
+    }
+  };
+
+  useEffect(() => {
+    // Add event listener on mount
+    document.addEventListener('mousedown', handleClickOutside);
+
+    // Clean up event listener on unmount
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, []);
 
   return (
     <div className='w-full px-6 py-4 bg-white shadow-md flex justify-between items-center fixed top-0 left-0 z-50'>
@@ -49,7 +66,10 @@ function Navbar() {
       </button>
 
       {isMenuOpen && (
-        <div className='md:hidden absolute top-16 right-6 bg-white shadow-md rounded-md w-48 z-50'>
+        <div 
+          ref={menuRef} 
+          className='md:hidden absolute top-16 right-6 bg-white shadow-md rounded-md w-48 z-50'
+        >
           <div className='flex flex-col items-center py-2'>
             {menuOptions.map((item) => (
               <NavbarItems 
