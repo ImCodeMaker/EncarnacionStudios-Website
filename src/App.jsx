@@ -22,7 +22,6 @@ function App() {
         <FAQ/>
       </div>
       <Footer/>
-      <PolicyRoutes /> {/* Render the routes for policies here */}
 
     </div>
   );
