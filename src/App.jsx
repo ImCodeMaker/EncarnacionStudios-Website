@@ -4,7 +4,6 @@ import Navbar from './PagesLayout/Navbar';
 import ServicesSection from './PagesLayout/ServicesSection';
 import Testimonials from './PagesLayout/Testimonials';
 import Footer from './PagesLayout/Footer';
-import PolicyRoutes from './Components/Routers'
 
 function App() {
   return (
