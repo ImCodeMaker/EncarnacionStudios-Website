@@ -1,13 +1,14 @@
 import React from 'react';
 
-function NavbarItems({ name }) {
+function NavbarItems({ name, onClick }) {
   return (
-    <a 
-      href={`#${name.toLowerCase()}`} 
-      className='text-lg font-medium hover:text-gray-700'
+    <button 
+      onClick={() => onClick(name.toLowerCase())} 
+      className='text-lg font-medium hover:text-gray-700 bg-transparent border-none cursor-pointer'
+      aria-label={name} // Agrega un aria-label para accesibilidad
     >
       {name}
-    </a>
+    </button>
   );
 }
 

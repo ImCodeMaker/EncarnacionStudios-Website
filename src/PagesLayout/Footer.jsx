@@ -5,6 +5,13 @@ import TwitterIcon from './../Assets/Images/twitter.svg'; // Replace with actual
 import InstagramIcon from './../Assets/Images/instagram.svg'; // Replace with actual paths
 
 function Footer() {
+  const handleScroll = (sectionId) => {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <div className='bg-slate-300 flex flex-col md:flex-row justify-between items-center px-5 py-8 md:py-10'>
       <div className='flex flex-col items-center md:items-start mb-6 md:mb-0 w-full md:w-auto'>
@@ -30,10 +37,30 @@ function Footer() {
         </div>
         <div className='flex flex-col items-center md:items-start mb-6 md:mb-0 md:w-1/4'>
           <h2 className='text-sm md:text-base font-bold font-inter mb-2'>Products & Services</h2>
-          <a href='/service1' className='text-xs md:text-sm font-light font-inter hover:text-gray-700'>Full Stack Web Apps</a>
-          <a href='/service2' className='text-xs md:text-sm font-light font-inter hover:text-gray-700'>Mobile Apps</a>
-          <a href='/service3' className='text-xs md:text-sm font-light font-inter hover:text-gray-700'>E-commerce Solutions</a>
-          <a href='/service4' className='text-xs md:text-sm font-light font-inter hover:text-gray-700'>API Integration</a>
+          <button 
+            onClick={() => handleScroll('services-section')} 
+            className='text-xs md:text-sm font-light font-inter hover:text-gray-700 bg-transparent border-none cursor-pointer'
+          >
+            Full Stack Web Apps
+          </button>
+          <button 
+            onClick={() => handleScroll('services-section')} 
+            className='text-xs md:text-sm font-light font-inter hover:text-gray-700 bg-transparent border-none cursor-pointer'
+          >
+            Mobile Apps
+          </button>
+          <button 
+            onClick={() => handleScroll('services-section')} 
+            className='text-xs md:text-sm font-light font-inter hover:text-gray-700 bg-transparent border-none cursor-pointer'
+          >
+            E-commerce Solutions
+          </button>
+          <button 
+            onClick={() => handleScroll('services-section')} 
+            className='text-xs md:text-sm font-light font-inter hover:text-gray-700 bg-transparent border-none cursor-pointer'
+          >
+            API Integration
+          </button>
         </div>
         <div className='flex flex-col items-center md:items-start md:w-1/4'>
           <h2 className='text-sm md:text-base font-bold font-inter mb-2'>Support & Legal</h2>
