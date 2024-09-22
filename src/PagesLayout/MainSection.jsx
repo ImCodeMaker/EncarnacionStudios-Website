@@ -9,13 +9,13 @@ function MainSection() {
 
   return (
     <div id='home' className='bg-slate-300 min-h-screen flex flex-col justify-center items-center px-4 md:px-8'>
-      <h1>
+      <div>
         <Typewriter
           className='text-4xl md:text-6xl lg:text-7xl font-bold font-inter text-center'
           text="Encarnacion Studios."
           speed={100}
         />
-      </h1>
+      </div>
       <div className='mt-6'>
         <Button 
           className='px-6 py-3 md:px-8 md:py-4 bg-custom-dark text-custom-light rounded-lg hover:bg-gray-700'
