@@ -1,8 +1,12 @@
 import React from 'react'
 
+
+
 function AboutUs() {
   return (
-    <div>AboutUs</div>
+    <div id='about-us'>
+      <p>Prueba</p>
+    </div>
   )
 }
 
