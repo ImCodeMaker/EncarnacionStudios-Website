@@ -17,7 +17,12 @@ function Footer() {
   return (
     <div className="bg-slate-300 flex flex-col md:flex-row justify-between items-center px-5 py-8 md:py-10">
       <div className="flex flex-col items-center md:items-start mb-6 md:mb-0 w-full md:w-auto">
+        <div>
+        <button onClick={() => handleScroll('main-section')}>
         <img src={Logo} alt="Logo" className="h-14 w-14 mb-4" />
+        </button>
+        </div>
+        
         <div className="flex space-x-4 mt-2">
           <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
             <img src={FacebookIcon} alt="Facebook" className="h-6 w-6 hover:opacity-75" />
