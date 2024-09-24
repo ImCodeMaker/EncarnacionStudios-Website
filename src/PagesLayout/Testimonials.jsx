@@ -9,31 +9,31 @@ function Testimonials() {
           Testimonials
         </h2>
         <p className='font-light font-inter text-[#757575] mb-8 max-w-2xl mx-auto'>
-          Here are some of the most common questions our customers ask. If you need more information, feel free to reach out to our support team.
+          We have yet to have the opportunity to work with clients, but we are committed to delivering exceptional service and look forward to building meaningful relationships in the future.
         </p>
         <div className='flex flex-col md:flex-row justify-center items-center w-full space-y-8 md:space-y-0 md:space-x-8'>
           <div className='flex-1 max-w-xs'>
             <TestimonialsCards 
-              title={'Test'} 
-              text={'I don’t even know what to put in here but I know that I have to put something but yeah, it’s okay I guess.'} 
-              name={'John Doe'} 
-              reviewDate={'12/01/2006'}
+              title={'A New Beginning at Encarnacion Studios'} 
+              text={'Although we have not yet had clients, our dedication to excellence in every project is our top priority. We are ready to create memorable experiences.'} 
+              name={'Encarnacion Studios Team'} 
+              reviewDate={'Review Date: Coming Soon'}
             />
           </div>
           <div className='flex-1 max-w-xs'>
             <TestimonialsCards 
-              title={'Test'} 
-              text={'I don’t even know what to put in here but I know that I have to put something but yeah, it’s okay I guess.'} 
-              name={'John Doe'} 
-              reviewDate={'12/01/2006'}
+              title={'A Commitment to Quality'} 
+              text={'Our focus is to provide exceptional and personalized service. We are eager to embark on our journey with our future clients.'} 
+              name={'Encarnacion Studios Team'} 
+              reviewDate={'Review Date: Coming Soon'}
             />
           </div>
           <div className='flex-1 max-w-xs'>
             <TestimonialsCards 
-              title={'Test'} 
-              text={'I don’t even know what to put in here but I know that I have to put something but yeah, it’s okay I guess.'} 
-              name={'John Doe'} 
-              reviewDate={'12/01/2006'}
+              title={'Ready to Serve You'} 
+              text={'At Encarnacion Studios, we are prepared to tackle any challenges our clients present and are committed to doing so with the utmost professionalism.'} 
+              name={'Encarnacion Studios Team'} 
+              reviewDate={'Review Date: Coming Soon'}
             />
           </div>
         </div>
