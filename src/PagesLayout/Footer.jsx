@@ -75,7 +75,7 @@ function Footer() {
         </div>
         <div className="flex flex-col items-center md:items-start md:w-1/4">
           <h2 className="text-sm md:text-base font-bold font-inter mb-2">Support & Legal</h2>
-          <a href={`${baseUrl}/privacy`} target="_blank" rel="noopener noreferrer" className="text-xs md:text-sm font-light font-inter hover:text-gray-700">
+          <a href={`${baseUrl}/help`} target="_blank" rel="noopener noreferrer" className="text-xs md:text-sm font-light font-inter hover:text-gray-700">
             Help Center
           </a>
           <a href={`${baseUrl}/contact`} target="_blank" rel="noopener noreferrer" className="text-xs md:text-sm font-light font-inter hover:text-gray-700">
@@ -86,9 +86,6 @@ function Footer() {
           </a>
           <a href={`${baseUrl}/terms`} target="_blank" rel="noopener noreferrer" className="text-xs md:text-sm font-light font-inter hover:text-gray-700">
             Terms of Service
-          </a>
-          <a href={`${baseUrl}/cookies`} target="_blank" rel="noopener noreferrer" className="text-xs md:text-sm font-light font-inter hover:text-gray-700">
-            Cookies Policy
           </a>
           <a href={`${baseUrl}/data-security`} target="_blank" rel="noopener noreferrer" className="text-xs md:text-sm font-light font-inter hover:text-gray-700">
             Data Security

@@ -6,7 +6,7 @@ import Contact from './PagesLayout/Redirect_Pages/Contact';
 import PrivacyPolicy from './PagesLayout/Redirect_Pages/PrivacyPolicy'; 
 import TermsOfService from './PagesLayout/Redirect_Pages/TermsOfService'; 
 import DataSecurity from './PagesLayout/Redirect_Pages/DataSecurity';
-import CookiesPolicy from './PagesLayout/Redirect_Pages/CookiesPolicy'
+import HelpCenter from './PagesLayout/Redirect_Pages/HelpCenter'
 import LandingPage from './LandingPage';
 
 
@@ -19,8 +19,8 @@ function App() {
         <Route exact path="/contact" element={<Contact />} />
         <Route exact path="/privacy" element={<PrivacyPolicy />} />
         <Route exact path="/terms" element={<TermsOfService />} />
-        <Route exact path="/cookies" element={<CookiesPolicy />} />
         <Route exact path="/data-security" element={<DataSecurity />} />
+        <Route exact path="/help" element={<HelpCenter />} />
         {/* Add other routes as needed */}
       </Routes>
     </BrowserRouter>
