@@ -30,7 +30,7 @@ function ContactUs() {
           </p>
 
           <p className="text-md md:text-lg leading-relaxed mb-6">
-            <strong>Email:</strong> contact@encarnacionstudios.com
+            <strong>Email:</strong> encarnacionstudiossprt@gmail.com
           </p>
 
           <p className="text-md md:text-lg leading-relaxed mb-6">
@@ -38,7 +38,7 @@ function ContactUs() {
           </p>
 
           <p className="text-md md:text-lg leading-relaxed mb-6">
-            We are located in <strong>City, Country</strong>, and always available to collaborate remotely with clients globally.
+            We are located in <strong>Santo Domingo, Dominican Republic</strong>, and always available to collaborate remotely with clients globally.
           </p>
 
           <p className="text-md md:text-lg leading-relaxed mb-6">

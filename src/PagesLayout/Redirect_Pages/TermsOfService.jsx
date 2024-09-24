@@ -237,10 +237,10 @@ function TermsOfService() {
           For any inquiries regarding our Terms of Service, please reach out to
           us at{" "}
           <a
-            href="mailto:info@encarnacionstudios.com"
+            href="mailto:encarnacionstudiossprt@gmail.com"
             className="text-blue-500 hover:underline"
           >
-            info@encarnacionstudios.com
+            encarnacionstudiossprt@gmail.com
           </a>
           .
         </p>
