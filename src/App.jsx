@@ -14,7 +14,7 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route exact path="/" element={<LandingPage />} /> {/* Your main home component */}
+        <Route exact path="/" element={<LandingPage />} /> 
         <Route exact path="/about" element={<AboutUs />} />
         <Route exact path="/contact" element={<Contact />} />
         <Route exact path="/privacy" element={<PrivacyPolicy />} />
