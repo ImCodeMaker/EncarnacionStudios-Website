@@ -66,12 +66,6 @@ function Footer() {
           >
             E-commerce Solutions
           </button>
-          <button 
-            onClick={() => handleScroll('services-section')} 
-            className='text-xs md:text-sm font-light font-inter hover:text-gray-700 bg-transparent border-none cursor-pointer'
-          >
-            API Integration
-          </button>
         </div>
         <div className="flex flex-col items-center md:items-start md:w-1/4">
           <h2 className="text-sm md:text-base font-bold font-inter mb-2">Support & Legal</h2>
