@@ -225,6 +225,13 @@ function TermsOfService() {
           connection with the use of our services or products.
         </p>
 
+        <h2 className="text-lg md:text-xl font-semibold mb-4">
+          17. Limitation of Liability
+        </h2>
+        <p className="text-md md:text-lg leading-relaxed mb-6">
+          Test test test
+        </p>
+
         <p className="text-md md:text-lg leading-relaxed mb-6">
           By engaging with Encarnacion Studios, you confirm that you understand
           and agree to these Terms of Service. If you have any questions or
